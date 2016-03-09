@@ -32,11 +32,6 @@
           s←⌈R÷r
           R←r×s
           ⊂[1+2×⍳k](,s,⍪r)⍴R↑⍵
-⍝ ⍺ shape of sub arrays
-⍝ ⍵ multi-d array
-⍝ ← nested array of ⍺ shaped subarrays of ⍵
-⍝   if ⍺ is shorter than rank ⍵ it is padded at left with ones.
-⍝   if any ⍺ is not a factor of ⍴⍵, ⍵ is padded to make it so.
       }
 
       rgb_avg←{
