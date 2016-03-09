@@ -81,8 +81,6 @@
               out←(2/size)##.tessellate out
               out←##.rgb_avg¨out
               out←size/size⌿out
-            ⍝ out←{3/⌈(+/0.2 0.71 0.07×⊃⍵)}¨out
-            ⍝ out←{256⊥⍵}¨out
               out
           }
 
