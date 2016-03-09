@@ -39,6 +39,12 @@
       }
 
     :Namespace Filters
+          
+          Brighten←{
+              ⍺←20
+              256⊥255⌊⍺+(3/256)⊤⍵
+          }
+
           Duplo←{⎕IO←0
               ⍺←8
               row_avg←{⊃,/{(⍴r)⍴##.rgb_avg⊢r←⊃,/⍵}¨⍺⊂⍵}
@@ -77,6 +83,10 @@
               out←##.rgb_avg¨out
               out←size/size⌿out
               out
+          }
+          
+          RemoveYellow←{
+              256⊥0 0 1×[1](3/256)⊤⍵
           }
 
           RemoveTurquoise←{
