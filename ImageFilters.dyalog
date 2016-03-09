@@ -78,6 +78,10 @@
               out←size/size⌿out
               out
           }
+          
+          RemoveYellow←{
+              256⊥0 0 1×[1](3/256)⊤⍵
+          }
 
           RemoveBlue←{
               256⊥1 1 0×[1](3/256)⊤⍵
